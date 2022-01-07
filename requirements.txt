@@ -1,23 +1,23 @@
-Flask
+Flask==2.0.2
 Gunicorn
-Werkzeug
-numpy
-pandas
+Werkzeug==2.0.2
+numpy==1.15.4
+pandas==1.1.3
 opencv-python
 cmake
 argparse
-scipy
-dlib
-tensorflow
-imutils
+scipy==1.5.2
+dlib==19.20
+tensorflow==1.10.0
+imutils==0.5.4
 tika
 wave
-nltk
+nltk==3.6.5
 gensim
-seaborn
-scikit-learn
-dill
-keras
+seaborn==0.11.2
+scikit-learn==0.23.1
+dill==0.3.4
+keras==2.2.2
 wordcloud
 Flask
 Werkzeug
@@ -35,3 +35,5 @@ tensorflow
 imutils
 
 
+
+xgboost==1.4.2
