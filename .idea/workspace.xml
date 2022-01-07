@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb30d025-160d-45cd-8ac3-39c544a7dff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/03-Video/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Video/src/preprocessing/feature_importance.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/src/preprocessing/feature_importance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/src/preprocessing/feature_importance.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/src/preprocessing/feature_extraction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641553270359</updated>
       <workItem from="1641553273713" duration="198000" />
-      <workItem from="1641553507843" duration="2476000" />
+      <workItem from="1641553507843" duration="3115000" />
     </task>
     <servers />
   </component>
