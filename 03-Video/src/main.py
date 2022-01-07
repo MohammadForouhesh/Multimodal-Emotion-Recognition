@@ -74,16 +74,16 @@ def get_label(argument):
     labels = {0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Sad', 5: 'Surprise', 6: 'Neutral'}
     return labels.get(argument, "Invalid emotion")
 
-plt.figure(figsize=[10,5])
 
-# Display the first image in training data
+plt.figure(figsize=[10, 5])
+
 plt.subplot(121)
-plt.imshow(np.squeeze(X_train[25,:,:], axis = 2), cmap='gray')
+plt.imshow(np.squeeze(X_train[25, :, :], axis=2), cmap='gray')
 plt.title("Ground Truth : {}".format(get_label(int(y_train[0]))))
 
 # Display the first image in testing data
 plt.subplot(122)
-plt.imshow(np.squeeze(X_test[26,:,:], axis = 2), cmap='gray')
+plt.imshow(np.squeeze(X_test[26, :, :], axis=2), cmap='gray')
 plt.title("Ground Truth : {}".format(get_label(int(y_test[1500]))))
 
 
