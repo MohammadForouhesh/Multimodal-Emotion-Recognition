@@ -3,15 +3,6 @@ import math
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-from tensorflow.python.eager import context
-from tensorflow.python.framework import constant_op
-from tensorflow.python.framework import dtypes
-from tensorflow.python.framework import ops
-from tensorflow.python.ops import control_flow_ops
-from tensorflow.python.ops import math_ops
-from tensorflow.python.ops import random_ops
-from tensorflow.python.util.tf_export import tf_export
-
 from skimage.transform import resize
 from skimage import color
 import tensorflow as tf
@@ -103,16 +94,11 @@ def overlay_cam(img, cam, alpha, show=True, outFile=None):
         img = img - np.min(img)
         img = img / np.max(img)
 
-        # Construct RGB version of grey-level image
         img_color = np.dstack((img, img, img))
 
-        # Convert the input image and color mask to Hue Saturation Value (HSV)
-        # colorspace
         img_hsv = color.rgb2hsv(img_color)
         color_mask_hsv = color.rgb2hsv(cam_heatmap)
 
-        # Replace the hue and saturation of the original image
-        # with that of the color mask
         img_hsv[..., 0] = color_mask_hsv[..., 0]
         img_hsv[..., 1] = color_mask_hsv[..., 1] * alpha
 
@@ -153,7 +139,6 @@ def get_mean_cam(cams):
         c for c in cams if (
                                not np.isnan(c).any()) and (
                                    len(c) > 0)]
-    #     print('Nb of images: {}, non nan: {}'.format(len(cams), len(cams_num)))
     if len(cams_num) > 0:
         cams_sum = sum(cams_num) / len(cams_num)
         cam_heatmap = cv2.applyColorMap(
@@ -175,11 +160,6 @@ def visualize(batch_img, batch_label, modelPath, dan, sess, img_mask=1, batch_si
     """Plot GradCam visualization for given image"""
     cam = get_gradcam(batch_img, batch_label, modelPath, dan,
                       sess, img_mask, img_size, conv_layer, logging=True)
-
-    # if len(cam) > 0:
-    #     cam_heatmap = get_heatmap(cam)
-    # else:
-    #     return None
 
     if vis_type == 'overlay':
         img = batch_img[0]
@@ -207,7 +187,6 @@ def get_most_activated_landmarks(
         y = min(int(y_), img_size - 1)
 
         landmark_activations[x, y] = 0
-        # Add activations from around landmarks
         for r in range(radius):
             for s in range(radius):
                 try:
@@ -220,13 +199,9 @@ def get_most_activated_landmarks(
     return activated_landmarks
 
 
-# %%
-
 def e_distance(a, b):
     return np.linalg.norm(a - b)
 
-
-# %%
 
 def find_closest(matrix_list, target_matrix):
     min_distance = 999999
@@ -242,22 +217,10 @@ def find_closest(matrix_list, target_matrix):
     return closest_matrix, closest_id
 
 
-# %% md
-
-# VII. Save the dataframes
-
-# %%
-
 np.save(local_path + 'X_train_augmented', train_data)
-
-# %%
 
 np.save(local_path + 'X_test_augmented', test_data)
 
-# %%
-
 np.save(local_path + 'y_train_augmented', train_labels_one_hot)
-
-# %%
 
 np.save(local_path + 'y_test_augmented', test_labels_one_hot)
