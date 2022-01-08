@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb30d025-160d-45cd-8ac3-39c544a7dff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Video/src/preprocessing/emotional_dan.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/src/preprocessing/emotional_dan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641553270359</updated>
       <workItem from="1641553273713" duration="198000" />
-      <workItem from="1641553507843" duration="7265000" />
+      <workItem from="1641553507843" duration="8577000" />
     </task>
     <servers />
   </component>
