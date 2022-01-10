@@ -1,38 +1,23 @@
-### General imports ###
 from __future__ import division
 
 import numpy as np
 import pandas as pd
 import cv2
 
-from time import time
-from time import sleep
-import re
-import os
-
-import argparse
-from collections import OrderedDict
-
-### Image processing ###
 from scipy.ndimage import zoom
 from scipy.spatial import distance
-import imutils
-from scipy import ndimage
-
 import dlib
 
 from tensorflow.keras.models import load_model
 from imutils import face_utils
-
-import requests
 
 global shape_x
 global shape_y
 global input_shape
 global nClasses
 
-def show_webcam() :
 
+def show_webcam() :
     shape_x = 48
     shape_y = 48
     input_shape = (shape_x, shape_y, 1)
@@ -40,6 +25,7 @@ def show_webcam() :
 
     thresh = 0.25
     frame_check = 20
+
 
     def eye_aspect_ratio(eye):
         A = distance.euclidean(eye[1], eye[5])
@@ -49,7 +35,6 @@ def show_webcam() :
         return ear
 
     def detect_face(frame):
-        
         #Cascade classifier pre-trained model
         cascPath = 'Models/face_landmarks.dat'
         faceCascade = cv2.CascadeClassifier(cascPath)
@@ -113,9 +98,9 @@ def show_webcam() :
     (eblStart, eblEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eyebrow"]
     (ebrStart, ebrEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eyebrow"]
 
-    model = load_model('Models/video.h5')
+    model = load_model('../../../Models/video.h5')
     face_detect = dlib.get_frontal_face_detector()
-    predictor_landmarks  = dlib.shape_predictor("Models/face_landmarks.dat")
+    predictor_landmarks  = dlib.shape_predictor("../../../Models/face_landmarks.dat")
     
     #Lancer la capture video
     video_capture = cv2.VideoCapture(0)
@@ -236,8 +221,10 @@ def show_webcam() :
     video_capture.release()
     cv2.destroyAllWindows()
 
+
 def main():
     show_webcam()
+
 
 if __name__ == "__main__":
     main()
