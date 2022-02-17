@@ -6,11 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="fb30d025-160d-45cd-8ac3-39c544a7dff1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Video/Models.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/Models.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Video/Python/live_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/src/predict/live_face.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Video/src/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Video/src/predict/prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Video/src/preprocessing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/src/preprocessing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/00-Fer2013-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/01-Pre-Processing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/02-HOG_Features-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/04-LGBM-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/05-Simple_Arch-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/07-Xception-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/09-Prediction-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/1-Pre-Processing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/10-Hybrid-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/2-HOG_Features-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/4-Simple_Arch-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/6-Xception-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/9-Hybrid-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/9-Prediction-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Common-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/DeXpression-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Fer2013-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/GenerateFaces-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/HOG_Features-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Inception-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Pre-Processing-EmotionalDAN-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Pre-Processing-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Prediction-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Simple_Arch-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/.ipynb_checkpoints/Xception-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-Video/src/predict/live_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-Video/src/predict/live_face.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +159,16 @@
       <workItem from="1641741711490" duration="6346000" />
       <workItem from="1641830580346" duration="6264000" />
       <workItem from="1641852662400" duration="18000" />
+      <workItem from="1641925292718" duration="1904000" />
+      <workItem from="1641939309958" duration="222000" />
+      <workItem from="1642760208111" duration="945000" />
+      <workItem from="1642761300765" duration="1124000" />
+      <workItem from="1642770542576" duration="912000" />
+      <workItem from="1642772160985" duration="4398000" />
+      <workItem from="1643272755249" duration="40000" />
+      <workItem from="1644524398529" duration="2903000" />
+      <workItem from="1645094981760" duration="135000" />
+      <workItem from="1645109063836" duration="7169000" />
     </task>
     <servers />
   </component>
@@ -155,19 +187,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/03-Video/src/predict/live_face.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Multimodal_Emotion_Recognition$Preprocess.coverage" NAME="Preprocess Coverage Results" MODIFIED="1641831571000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-Video/src/preprocessing" />
     <SUITE FILE_PATH="coverage/Multimodal_Emotion_Recognition$main.coverage" NAME="main Coverage Results" MODIFIED="1641832497204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-Video/src" />
-    <SUITE FILE_PATH="coverage/Multimodal_Emotion_Recognition$live_face.coverage" NAME="live_face Coverage Results" MODIFIED="1641839230029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-Video/src/predict" />
+    <SUITE FILE_PATH="coverage/Multimodal_Emotion_Recognition$live_face.coverage" NAME="live_face Coverage Results" MODIFIED="1644526720813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-Video/src/predict" />
   </component>
 </project>
